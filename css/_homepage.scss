@@ -1,0 +1,118 @@
+.desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h1 {
+        font-family: $heading-familt;
+        color: $white;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 14px;
+        color: $text-color;
+        font-weight: 500;
+    }
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        img {
+            width: calc(100% / 3);
+        }
+    }
+}
+.illus {
+    @media #{$small} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > div {
+            width: 46%;
+        }
+    }
+    @media #{$mobile} {
+        & > div {
+            margin-bottom: 20px;
+        }
+    }
+    & > div {
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            a {
+                font-family: $heading-familt;
+                font-size: 20px;
+                color: $white;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+            i {
+                color: $white;
+                font-size: 16px;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            color: $text-color;
+        }
+    }
+}
+.info {
+    @media #{$small} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > div {
+            width: 46%;
+        }
+    }
+    background-color: $info-bg;
+    & > div {
+        h2 {
+            font-size: 22px;
+            font-family: $heading-familt;
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            color: $text-color;
+            margin-bottom: 15px;
+        }
+    }
+}
+.contact-us {
+    h2 {
+        font-size: 22px;
+        font-family: $heading-familt;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+
+}
